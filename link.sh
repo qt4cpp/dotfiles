@@ -15,13 +15,15 @@ do
 done
 
 # .configはすでにあるかもしれないので別でやる
-if [ ~/.config ]; then
-  cd ${DOT_DIRECTORY}/.config
-  for a in .??*
-  do
-    ln -snfv ${DOT_DIRECTORY}/.config/fish/ ${HOME}/.config/fish
-    ln -snfv ${DOT_DIRECTORY}/.config/fisherman/ ${HOME}/.config/fisherman
-  done
+if [ ! ~/.config ]; then
+  mkdir ${HOME}/.config
 fi
+
+cd ${DOT_DIRECTORY}/.config
+for a in .??*
+do
+  ln -snfv ${DOT_DIRECTORY}/.config/fish/ ${HOME}/.config/fish
+  ln -snfv ${DOT_DIRECTORY}/.config/fisherman/ ${HOME}/.config/fisherman
+done
 
 echo $(tput setaf 2)Deploy dotfiles complete!. ✔︎$(tput sgr0)

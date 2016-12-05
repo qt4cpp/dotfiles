@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if has "brew"; then
+if type "brew" > /dev/null 2>&1; then
   echo "Updating Homebrew..."
   brew update && brew upgrade
   [[ $? ]] && echo "$(tput setaf 2)Update Homebrew complete. ✔︎$(tput sgr0)"
@@ -57,7 +57,7 @@ if has "brew"; then
   
   brew linkapps mpv
   
-  brew creanup
+  brew cleanup
   
 else
   echo "You have to install homebrew at first."

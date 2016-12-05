@@ -30,23 +30,10 @@ if [ ! -d ${DOT_DIRECTORY} ]; then
 fi
 
 
-## Simbolic link
-
+## Simlink
 cd ${DOT_DIRECTORY}
 
-# symlinks
-if [ -f ~/.zshrc ]; then
-rm ~/.zshrc
-
-# symlink を dotfiles/ 以下すべてを ~/ にはる
-for f in .??*
-do
-  # 無視したいファイルやディレクトリはこんな風に追加してね
-  [[ ${f} = ".git" ]] && continue
-  [[ ${f} = ".gitignore" ]] && continue
-  ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
-done
-echo $(tput setaf 2)Deploy dotfiles complete!. ✔︎$(tput sgr0)
+sh link.sh
 
 ## set installed zsh & fish
 if [ ${SHELL} != "bin/fish" ] then

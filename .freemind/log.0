@@ -1428,3 +1428,11 @@ node_status_line
 ??: Start purging for /Users/Tatsuhiko/.freemind/osm
 12 05, 2016 4:03:15 ?? plugins.map.Registration$CachePurger run
 ??: Finished purging
+12 05, 2016 4:13:23 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 4:13:23 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 4:23:33 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 4:23:33 ?? plugins.map.Registration$CachePurger run
+??: Finished purging

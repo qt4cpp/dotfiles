@@ -10,6 +10,18 @@ do
   # 無視したいファイルやディレクトリはこんな風に追加してね
   [[ ${f} = ".git" ]] && continue
   [[ ${f} = ".gitignore" ]] && continue
+  [[ ${f} = ".config" ]] && continue
   ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
 done
+
+# .configはすでにあるかもしれないので別でやる
+if [ ~/.config ]; then
+  cd ${DOT_DIRECTORY}/.config
+  for a in .??*
+  do
+    ln -snfv ${DOT_DIRECTORY}/.config/fish/ ${HOME}/.config/fish
+    ln -snfv ${DOT_DIRECTORY}/.config/fisherman/ ${HOME}/.config/fisherman
+  done
+fi
+
 echo $(tput setaf 2)Deploy dotfiles complete!. ✔︎$(tput sgr0)

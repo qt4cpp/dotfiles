@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if has "brew"; then
   echo "Updating Homebrew..."
   brew update && brew upgrade

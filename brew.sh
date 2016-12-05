@@ -50,10 +50,10 @@ if type "brew" > /dev/null 2>&1; then
     [[ $? ]] && echo "$(tput setaf 2)Installed missing formulae ✔︎$(tput sgr0)"
   fi
 
-  # EmacsはMac port ver. メンテナンスされなければ変更する;161205
-  brew tap 'railwaycat/emacsmacport'
-  brew install emacs-mac
-  brew linkapps emacs-mac
+  # Emacs-plus
+  brew tap d12frosted/emacs-plus
+  brew install emacs-plus --with-cocoa --with-gnutls --with-librsvg --with-imagemagick --with-spacemacs-icon
+  brew linkapps emacs-plus
   
   brew linkapps mpv
   

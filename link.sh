@@ -2,6 +2,8 @@
 
 DOT_DIRECTORY="${HOME}/dotfiles"
 
+cd ${DOT_DIRECTORY}
+
 # symlink を dotfiles/ 以下すべてを ~/ にはる
 for f in .??*
 do

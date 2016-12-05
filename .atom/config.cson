@@ -1,0 +1,21 @@
+"*":
+  autosave:
+    enabled: true
+  core:
+    disabledPackages: [
+      "recent-files"
+    ]
+  editor:
+    fontFamily: "MigMix-1M-Regular"
+    fontSize: 14
+    invisibles: {}
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "326ba0a1-9528-84a9-e4a7-4d99351fabb2"
+  metrics:
+    userId: "4f9c913e445cf770306d2f5e8848f9532ba8770b"
+  "recent-files":
+    updated: false
+  welcome:
+    showOnStartup: false

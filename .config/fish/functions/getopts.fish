@@ -1,0 +1,1 @@
+/Users/Tatsuhiko/.config/fisherman/getopts/getopts.fish

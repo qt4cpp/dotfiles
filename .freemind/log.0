@@ -1,0 +1,1430 @@
+12 04, 2016 9:45:42 ?? freemind.main.FreeMind <init>
+??: freemind_version = 1.1.0 Beta 2; freemind_xml_version = 1.1.0
+Build: 1
+
+java_version = 1.7.0_45; os_name = Mac OS X; os_version = 10.11.6
+12 04, 2016 9:45:42 ?? freemind.main.FreeMind <init>
+??: Environment key java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+Environment key java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+Environment key java.class.path = /Applications/FreeMind.app/Contents/Java/Classes:/Applications/FreeMind.app/Contents/Java/bindings.jar:/Applications/FreeMind.app/Contents/Java/freemind.jar:/Applications/FreeMind.app/Contents/Java/gnu-regexp-1.1.4.jar:/Applications/FreeMind.app/Contents/Java/jgoodies-common.jar:/Applications/FreeMind.app/Contents/Java/jgoodies-forms.jar:/Applications/FreeMind.app/Contents/Java/jibx-run.jar:/Applications/FreeMind.app/Contents/Java/jortho.jar:/Applications/FreeMind.app/Contents/Java/jsoup.jar:/Applications/FreeMind.app/Contents/Java/serializer.jar:/Applications/FreeMind.app/Contents/Java/SimplyHTML.jar:/Applications/FreeMind.app/Contents/Java/xalan.jar:/Applications/FreeMind.app/Contents/Java/xercesImpl.jar:/Applications/FreeMind.app/Contents/Java/xml-apis.jar:/Applications/FreeMind.app/Contents/Java/xpp3.jar
+Environment key java.class.version = 51.0
+Environment key java.endorsed.dirs = /Applications/FreeMind.app/Contents/PlugIns/jdk1.7.0_45.jdk/Contents/Home/jre/lib/endorsed
+Environment key java.ext.dirs = /Users/Tatsuhiko/Library/Java/Extensions:/Applications/FreeMind.app/Contents/PlugIns/jdk1.7.0_45.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Environment key java.home = /Applications/FreeMind.app/Contents/PlugIns/jdk1.7.0_45.jdk/Contents/Home/jre
+Environment key java.io.tmpdir = /var/folders/_4/2rf3r3997fdb4t0mf7rqj4nr0000gn/T/
+Environment key java.library.path = /Applications/FreeMind.app/Contents/MacOS
+Environment key java.runtime.name = Java(TM) SE Runtime Environment
+Environment key java.runtime.version = 1.7.0_45-b18
+Environment key java.specification.name = Java Platform API Specification
+Environment key java.specification.vendor = Oracle Corporation
+Environment key java.specification.version = 1.7
+Environment key java.util.Arrays.useLegacyMergeSort = true
+Environment key java.vendor = Oracle Corporation
+Environment key java.vendor.url = http://java.oracle.com/
+Environment key java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+Environment key java.version = 1.7.0_45
+Environment key java.vm.info = mixed mode
+Environment key java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+Environment key java.vm.specification.name = Java Virtual Machine Specification
+Environment key java.vm.specification.vendor = Oracle Corporation
+Environment key java.vm.specification.version = 1.7
+Environment key java.vm.vendor = Oracle Corporation
+Environment key java.vm.version = 24.45-b08
+Environment key sun.arch.data.model = 64
+Environment key sun.awt.enableExtraMouseButtons = true
+Environment key sun.boot.class.path = /Applications/FreeMind.app/Contents/PlugIns/jdk1.7.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Applications/FreeMind.app/Contents/PlugIns/jdk1.7.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Applications/FreeMind.app/Contents/PlugIns/jdk1.7.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Applications/FreeMind.app/Contents/PlugIns/jdk1.7.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Applications/FreeMind.app/Contents/PlugIns/jdk1.7.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Applications/FreeMind.app/Contents/PlugIns/jdk1.7.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Applications/FreeMind.app/Contents/PlugIns/jdk1.7.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Applications/FreeMind.app/Contents/PlugIns/jdk1.7.0_45.jdk/Contents/Home/jre/lib/JObjC.jar:/Applications/FreeMind.app/Contents/PlugIns/jdk1.7.0_45.jdk/Contents/Home/jre/classes
+Environment key sun.boot.library.path = /Applications/FreeMind.app/Contents/PlugIns/jdk1.7.0_45.jdk/Contents/Home/jre/lib
+Environment key sun.cpu.endian = little
+Environment key sun.cpu.isalist = 
+Environment key sun.font.fontmanager = sun.font.CFontManager
+Environment key sun.io.unicode.encoding = UnicodeBig
+Environment key sun.java.command = freemind.main.FreeMindStarter
+Environment key sun.java.launcher = SUN_STANDARD
+Environment key sun.jnu.encoding = UTF-8
+Environment key sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+Environment key sun.os.patch.level = unknown
+
+12 04, 2016 9:45:42 ?? freemind.main.EditServer <init>
+??: FreeMind server started on port 59146
+12 04, 2016 9:45:42 ?? freemind.main.EditServer <init>
+??: Authorization key is 540235976
+12 04, 2016 9:45:43 ?? freemind.main.FreeMind updateLookAndFeel
+??: Default (System) Look & Feel: com.apple.laf.AquaLookAndFeel
+12 04, 2016 9:45:44 ?? freemind.main.Tools getFreeMindBasePath
+??: Path: /Applications/FreeMind.app/Contents/Java/freemind.jar
+12 04, 2016 9:45:44 ?? freemind.main.Tools getFreeMindBasePath
+??: macPath: /Applications/FreeMind.app/Contents/Resources/Java/
+12 04, 2016 9:45:44 ?? freemind.modes.ModesCreator getAllModes
+??: Modes:[freemind.modes.browsemode.BrowseMode, freemind.modes.filemode.FileMode, freemind.modes.mindmapmode.MindMapMode]
+12 04, 2016 9:45:44 ?? freemind.modes.ModesCreator getMode
+??: Initializing mode MindMap
+12 04, 2016 9:45:44 ?? freemind.modes.mindmapmode.MindMapController init
+??: createXmlActions
+12 04, 2016 9:45:44 ?? freemind.modes.mindmapmode.MindMapController init
+??: createIconActions
+12 04, 2016 9:45:44 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+Strikethrough
+
+STDOUT: User patterns file /Users/Tatsuhiko/.freemind/patterns.xml not found.12 04, 2016 9:45:44 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+paste_as_link
+12 04, 2016 9:45:44 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+paste_as_local_link
+12 04, 2016 9:45:44 ?? freemind.modes.mindmapmode.MindMapController init
+??: createNodeHookActions
+12 04, 2016 9:45:44 ?? freemind.main.FreeMindCommon getFreemindBaseDir
+??: Basedir is: /Applications/FreeMind.app/Contents/Java
+12 04, 2016 9:45:44 ?? freemind.extensions.ImportWizard buildClassList
+??: Classpath for plugins:/Applications/FreeMind.app/Contents/Java:/Applications/FreeMind.app/Contents/Java/Classes:/Applications/FreeMind.app/Contents/Java/bindings.jar:/Applications/FreeMind.app/Contents/Java/freemind.jar:/Applications/FreeMind.app/Contents/Java/gnu-regexp-1.1.4.jar:/Applications/FreeMind.app/Contents/Java/jgoodies-common.jar:/Applications/FreeMind.app/Contents/Java/jgoodies-forms.jar:/Applications/FreeMind.app/Contents/Java/jibx-run.jar:/Applications/FreeMind.app/Contents/Java/jortho.jar:/Applications/FreeMind.app/Contents/Java/jsoup.jar:/Applications/FreeMind.app/Contents/Java/serializer.jar:/Applications/FreeMind.app/Contents/Java/SimplyHTML.jar:/Applications/FreeMind.app/Contents/Java/xalan.jar:/Applications/FreeMind.app/Contents/Java/xercesImpl.jar:/Applications/FreeMind.app/Contents/Java/xml-apis.jar:/Applications/FreeMind.app/Contents/Java/xpp3.jar
+12 04, 2016 9:45:44 ?? freemind.extensions.ImportWizard addClassesFromDir
+??: Found: plugins/CollaborationSocket
+12 04, 2016 9:45:44 ?? freemind.extensions.ImportWizard addClassesFromDir
+??: Found: plugins/ExportSvg
+12 04, 2016 9:45:44 ?? freemind.extensions.ImportWizard addClassesFromDir
+??: Found: plugins/FreemindHelp
+12 04, 2016 9:45:44 ?? freemind.extensions.ImportWizard addClassesFromDir
+??: Found: plugins/MapViewer
+12 04, 2016 9:45:44 ?? freemind.extensions.ImportWizard addClassesFromDir
+??: Found: plugins/ScriptingEngine
+12 04, 2016 9:45:45 ?? freemind.modes.mindmapmode.MindMapController init
+??: mindmap_menus
+12 04, 2016 9:45:45 ?? freemind.modes.mindmapmode.MindMapController init
+??: MindMapPopupMenu
+12 04, 2016 9:45:45 ?? freemind.modes.mindmapmode.MindMapController init
+??: MindMapToolBar
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_black
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_gray
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_maroon
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_red
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_green
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lime
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_olive
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_yellow
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_navy
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_blue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_purple
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_fuchsia
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_teal
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_aqua
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_silver
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_white
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_level1
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_level2
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_level3
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_level4
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_pink
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lightpink
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_hotpink
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_deeppink
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_palevioletred
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_mediumvioletred
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lightsalmon
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_salmon
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darksalmon
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lightcoral
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_indianred
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_crimson
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_firebrick
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkred
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_red
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_orangered
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_tomato
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_coral
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkorange
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_orange
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_yellow
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lightyellow
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lemonchiffon
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_papayawhip
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_moccasin
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_peachpuff
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_palegoldenrod
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_khaki
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkkhaki
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_gold
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_cornsilk
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_blanchedalmond
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_bisque
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_navajowhite
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_wheat
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_burlywood
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_tan
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_rosybrown
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_sandybrown
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_goldenrod
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkgoldenrod
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_peru
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_chocolate
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_saddlebrown
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_sienna
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_brown
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_maroon
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkolivegreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_olive
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_olivedrab
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_yellowgreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_limegreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lime
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lawngreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_chartreuse
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_greenyellow
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_springgreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_mediumspringgreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lightgreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_palegreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkseagreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_mediumseagreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_seagreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_forestgreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_green
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkgreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_mediumaquamarine
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_aqua
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_cyan
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lightcyan
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_paleturquoise
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_aquamarine
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_turquoise
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_mediumturquoise
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkturquoise
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lightseagreen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_cadetblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkcyan
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_teal
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lightsteelblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_powderblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lightblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_skyblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lightskyblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_deepskyblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_dodgerblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_cornflowerblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_steelblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_royalblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_blue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_mediumblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_navy
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_midnightblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lavender
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_thistle
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_plum
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_violet
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_orchid
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_fuchsia
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_magenta
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_mediumorchid
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_mediumpurple
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_blueviolet
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkviolet
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkorchid
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkmagenta
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_purple
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_indigo
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkslateblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_slateblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_mediumslateblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_white
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_snow
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_honeydew
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_mintcream
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_azure
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_aliceblue
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_ghostwhite
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_whitesmoke
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_seashell
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_beige
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_oldlace
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_floralwhite
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_ivory
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_antiquewhite
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_linen
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lavenderblush
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_mistyrose
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_gainsboro
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lightgray
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_silver
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkgray
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_gray
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_dimgray
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_lightslategray
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_slategray
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_darkslategray
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+font_color_black
+12 04, 2016 9:45:45 ?? freemind.modes.ModesCreator getMode
+??: Done: Initializing mode MindMap
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+plugins/collaboration/socket/socket_publish_map_plugin.name
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+plugins/collaboration/socket/socket_publish_map_plugin.description
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/DeactivateCloneAction.properties_name
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/DeactivateCloneAction.properties_documentation
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_jumpto.properties_name
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_jumpto.properties_documentation
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_hide_show.properties_name
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_hide_show.properties_documentation
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/ExportWithXSLT_HTML_Links.properties_name
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/ExportWithXSLT_HTML_Links.properties_documentation
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+mindmapmode_toolbar_font_color
+12 04, 2016 9:45:45 ?? freemind.controller.Controller obtainFocusForSelected
+??: No view present. No focus!
+12 04, 2016 9:45:45 ?? freemind.controller.Controller numberOfOpenMapInformation
+??: number 0, pIndex -1
+12 04, 2016 9:45:45 ?? accessories.plugins.MacChanges <init>
+??: Performing Mac Changes.
+12 04, 2016 9:45:45 ?? accessories.plugins.MacChanges <init>
+??: Adding application listener.
+12 04, 2016 9:45:45 ?? accessories.plugins.MacChanges <init>
+??: Performed Mac Changes.
+12 04, 2016 9:45:45 ?? freemind.modes.mindmapmode.MindMapController init
+??: createXmlActions
+12 04, 2016 9:45:45 ?? freemind.modes.mindmapmode.MindMapController init
+??: createIconActions
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+Strikethrough
+
+STDOUT: User patterns file /Users/Tatsuhiko/.freemind/patterns.xml not found.12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+paste_as_link
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+paste_as_local_link
+12 04, 2016 9:45:45 ?? freemind.modes.mindmapmode.MindMapController init
+??: createNodeHookActions
+12 04, 2016 9:45:45 ?? freemind.modes.mindmapmode.MindMapController init
+??: mindmap_menus
+12 04, 2016 9:45:45 ?? freemind.modes.mindmapmode.MindMapController init
+??: MindMapPopupMenu
+12 04, 2016 9:45:45 ?? freemind.modes.mindmapmode.MindMapController init
+??: MindMapToolBar
+12 04, 2016 9:45:45 ?? freemind.modes.mindmapmode.MindMapController loadInternally
+??: Loading file: file:/Users/Tatsuhiko/Library/Mobile%20Documents/com~apple~CloudDocs/mindmap/??PDCA.mm
+12 04, 2016 9:45:45 ?? freemind.modes.common.listeners.MindMapMouseWheelEventHandler <init>
+??: Setting SCROLL_SKIPS to 80
+12 04, 2016 9:45:45 ?? freemind.extensions.HookDescriptorBase getClassLoader
+??: file file:/Applications/FreeMind.app/Contents/Java/plugins/map/JMapViewer.jar exists = true
+12 04, 2016 9:45:45 ?? freemind.extensions.HookDescriptorBase getClassLoader
+??: file file:/Applications/FreeMind.app/Contents/Java/plugins/map/map_plugin.jar exists = true
+12 04, 2016 9:45:45 ?? freemind.extensions.HookDescriptorBase getClassLoader
+??: file file:/Applications/FreeMind.app/Contents/Java/plugins/script/scripting_plugin.jar exists = true
+12 04, 2016 9:45:45 ?? freemind.extensions.HookDescriptorBase getClassLoader
+??: file file:/Applications/FreeMind.app/Contents/Java/plugins/script/groovy-all.jar exists = true
+12 04, 2016 9:45:45 ?? freemind.extensions.HookDescriptorBase getClassLoader
+??: file file:/Applications/FreeMind.app/Contents/Java/plugins/collaboration/socket/socket_plugin.jar exists = true
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_key
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_value
+12 04, 2016 9:45:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_delete_row_text_id
+12 04, 2016 9:45:45 ?? plugins.map.Registration getCacheDirectory
+??: Trying to use file cache tile loader with dir /Users/Tatsuhiko/.freemind/osm
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+plugins/collaboration/socket/socket_publish_map_plugin.name
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+plugins/collaboration/socket/socket_publish_map_plugin.description
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/DeactivateCloneAction.properties_name
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/DeactivateCloneAction.properties_documentation
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_jumpto.properties_name
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_jumpto.properties_documentation
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_hide_show.properties_name
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_hide_show.properties_documentation
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/ExportWithXSLT_HTML_Links.properties_name
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/ExportWithXSLT_HTML_Links.properties_documentation
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+mindmapmode_toolbar_font_color
+12 04, 2016 9:45:46 ?? freemind.controller.Controller numberOfOpenMapInformation
+??: number 1, pIndex 0
+12 04, 2016 9:45:46 ?? freemind.modes.common.listeners.MindMapMouseWheelEventHandler <init>
+??: Setting SCROLL_SKIPS to 80
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_key
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_value
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_delete_row_text_id
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+plugins/collaboration/socket/socket_publish_map_plugin.name
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+plugins/collaboration/socket/socket_publish_map_plugin.description
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/DeactivateCloneAction.properties_name
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/DeactivateCloneAction.properties_documentation
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_jumpto.properties_name
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_jumpto.properties_documentation
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_hide_show.properties_name
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_hide_show.properties_documentation
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/ExportWithXSLT_HTML_Links.properties_name
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/ExportWithXSLT_HTML_Links.properties_documentation
+12 04, 2016 9:45:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+mindmapmode_toolbar_font_color
+12 04, 2016 9:45:46 ?? freemind.controller.Controller numberOfOpenMapInformation
+??: number 1, pIndex 0
+12 04, 2016 9:45:55 ?? freemind.modes.mindmapmode.MindMapController init
+??: createXmlActions
+12 04, 2016 9:45:55 ?? freemind.modes.mindmapmode.MindMapController init
+??: createIconActions
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+Strikethrough
+
+STDOUT: User patterns file /Users/Tatsuhiko/.freemind/patterns.xml not found.12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+paste_as_link
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+paste_as_local_link
+12 04, 2016 9:45:55 ?? freemind.modes.mindmapmode.MindMapController init
+??: createNodeHookActions
+12 04, 2016 9:45:55 ?? freemind.modes.mindmapmode.MindMapController init
+??: mindmap_menus
+12 04, 2016 9:45:55 ?? freemind.modes.mindmapmode.MindMapController init
+??: MindMapPopupMenu
+12 04, 2016 9:45:55 ?? freemind.modes.mindmapmode.MindMapController init
+??: MindMapToolBar
+12 04, 2016 9:45:55 ?? freemind.modes.common.listeners.MindMapMouseWheelEventHandler <init>
+??: Setting SCROLL_SKIPS to 80
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_key
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_value
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_delete_row_text_id
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+plugins/collaboration/socket/socket_publish_map_plugin.name
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+plugins/collaboration/socket/socket_publish_map_plugin.description
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/DeactivateCloneAction.properties_name
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/DeactivateCloneAction.properties_documentation
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_jumpto.properties_name
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_jumpto.properties_documentation
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_hide_show.properties_name
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_hide_show.properties_documentation
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/ExportWithXSLT_HTML_Links.properties_name
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/ExportWithXSLT_HTML_Links.properties_documentation
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+mindmapmode_toolbar_font_color
+12 04, 2016 9:45:55 ?? freemind.controller.Controller numberOfOpenMapInformation
+??: number 2, pIndex 1
+12 04, 2016 9:45:55 ?? freemind.main.Tools waitForEventQueue
+??: Can't wait for event queue, if I'm inside this queue!
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:45:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:46:33 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:46:34 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:46:40 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:46:41 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:46:48 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:46:48 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:46:51 ?? freemind.controller.Controller$ToggleToolbarAction isSelected
+??: ToggleToolbar was asked for selectedness.
+12 04, 2016 9:46:53 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:46:58 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:02 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:03 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:06 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:09 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:10 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:11 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:12 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:12 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:13 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:15 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:18 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:18 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:21 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:21 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:22 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:24 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:25 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:26 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:28 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:29 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:31 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:36 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:36 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:36 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:37 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:39 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:39 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:41 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:42 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:44 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:57 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:58 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:47:59 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:00 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:01 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:07 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:07 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:07 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:08 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:09 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:23 ?? freemind.modes.common.listeners.MindMapMouseWheelEventHandler <init>
+??: Setting SCROLL_SKIPS to 80
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_key
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_value
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_delete_row_text_id
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+plugins/collaboration/socket/socket_publish_map_plugin.name
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+plugins/collaboration/socket/socket_publish_map_plugin.description
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/DeactivateCloneAction.properties_name
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/DeactivateCloneAction.properties_documentation
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_jumpto.properties_name
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_jumpto.properties_documentation
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_hide_show.properties_name
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/NodeAttributeTable_hide_show.properties_documentation
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/ExportWithXSLT_HTML_Links.properties_name
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+accessories/plugins/ExportWithXSLT_HTML_Links.properties_documentation
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+mindmapmode_toolbar_font_color
+12 04, 2016 9:48:23 ?? freemind.controller.Controller numberOfOpenMapInformation
+??: number 2, pIndex 1
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:24 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:32 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:33 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:33 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:34 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:34 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:35 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:38 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:38 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:39 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:41 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:42 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:42 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:42 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:44 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:45 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:50 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:56 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:57 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:48:58 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:49:00 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:49:00 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:49:01 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:49:04 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:49:05 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:49:06 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:49:07 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:49:08 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:49:10 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:50:13 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:50:18 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:50:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:50:30 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 04, 2016 9:55:55 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 04, 2016 9:55:55 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 04, 2016 10:06:05 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 04, 2016 10:06:05 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 04, 2016 10:45:40 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 04, 2016 10:45:40 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 5:24:30 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 5:24:30 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 7:13:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:11 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:12 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:13 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:14 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:15 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:18 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:19 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:23 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:31 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:38 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:39 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:42 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:42 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:46 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:55 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:14:57 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:15:03 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:15:04 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:15:05 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:15:05 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:15:06 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:15:08 ?? freemind.main.FreeMindCommon$FreeMindResourceBundle handleGetObject
+??: Warning - resource string not found:
+node_status_line
+12 05, 2016 7:21:04 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 7:21:04 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 7:31:14 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 7:31:14 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 7:41:24 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 7:41:24 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 7:51:34 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 7:51:34 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 8:01:54 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 8:01:54 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 8:12:14 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 8:12:14 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 8:22:24 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 8:22:24 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 8:32:34 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 8:32:34 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 8:42:44 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 8:42:44 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 8:52:54 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 8:52:54 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 9:03:04 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 9:03:04 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 9:13:06 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 9:13:06 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 9:23:16 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 9:23:16 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 9:33:26 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 9:33:26 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 9:43:36 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 9:43:36 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 9:53:56 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 9:53:56 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 10:04:16 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 10:04:16 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 10:14:36 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 10:14:36 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 10:24:56 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 10:24:56 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 10:35:15 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 10:35:15 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 10:45:35 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 10:45:35 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 10:55:51 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 10:55:51 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 11:06:11 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 11:06:11 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 11:16:16 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 11:16:16 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 11:26:36 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 11:26:36 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 11:36:56 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 11:36:56 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 11:47:16 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 11:47:17 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 11:57:36 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 11:57:37 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 12:07:56 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 12:07:56 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 12:18:16 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 12:18:16 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 12:28:36 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 12:28:36 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 12:38:56 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 12:38:56 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 12:49:16 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 12:49:16 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 12:59:36 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 12:59:37 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 1:09:55 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 1:09:55 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 1:20:15 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 1:20:15 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 1:30:35 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 1:30:35 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 1:40:55 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 1:40:55 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 1:51:05 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 1:51:05 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 2:01:15 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 2:01:15 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 2:11:25 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 2:11:25 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 2:21:35 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 2:21:35 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 2:31:45 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 2:31:45 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 2:42:05 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 2:42:05 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 2:52:25 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 2:52:25 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 3:02:35 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 3:02:35 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 3:12:45 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 3:12:45 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 3:22:48 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 3:22:48 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 3:32:58 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 3:32:58 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 3:43:01 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 3:43:01 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 3:53:11 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 3:53:11 ?? plugins.map.Registration$CachePurger run
+??: Finished purging
+12 05, 2016 4:03:15 ?? plugins.map.Registration$CachePurger run
+??: Start purging for /Users/Tatsuhiko/.freemind/osm
+12 05, 2016 4:03:15 ?? plugins.map.Registration$CachePurger run
+??: Finished purging

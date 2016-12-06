@@ -280,7 +280,7 @@ you should place your code here."
         (add-hook 'minibuffer-setup-hook
                   '(lambda ()
                      (mac-toggle-input-method nil)))
-        
+ 
         ;; (mac-get-current-input-source) この関数を評価するとIMEの名前を評価される。`'
 
         ;; evilのノーマルステートではIMEをoffにする。
@@ -299,6 +299,12 @@ you should place your code here."
         ;; (mac-set-input-method-parameter "com.justsystems.inputmethod.atok29.Japanese" `title "[あ]")
         ))
 
+  (if (eq window-system 'mac)
+      (progn
+        ;; Emacs-macではalt->meta, Command->superにする
+        (setq mac-command-modifier 'super)
+        (setq mac-option-modifier 'meta)
+        ))
   ;; ----------------------------------------
   ;; IME common
   ;; ----------------------------------------

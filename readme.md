@@ -11,3 +11,16 @@ macのシェルスクリプトの改行コードはLFでなくてはならない
 ### 注意点
 - fish-shellだけ.configが他ですでに使っていたので、別でリンクを作る。
 - Emacsはmac ports版が良いらしいので、それを使っている。でもIMEパッチの設定がうまく動かないので、戻すか。前はEmacs-Plus?
+
+## 更新
+```
+git add .
+git commit -m "commit message"
+git push origin master
+```
+
+## 取り出し
+```
+git clone
+sh setup.sh
+```

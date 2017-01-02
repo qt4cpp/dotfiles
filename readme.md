@@ -26,6 +26,7 @@ sh setup.sh
 ```
 
 ## ファイルを消す
-git rm --cached file   # --cached でファイルを残して管理対象から外す
+
+``git rm --cached file   # --cached でファイルを残して管理対象から外す``
 
 管理対象から外したら、.gitignore に登録しておくのを忘れないように。

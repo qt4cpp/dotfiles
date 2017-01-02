@@ -10,7 +10,7 @@ macのシェルスクリプトの改行コードはLFでなくてはならない
 
 ### 注意点
 - fish-shellだけ.configが他ですでに使っていたので、別でリンクを作る。
-- Emacsはmac ports版が良いらしいので、それを使っている。でもIMEパッチの設定がうまく動かないので、戻すか。前はEmacs-Plus?
+- Emacsはmac ports版をやめて、suzuki さんバージョンにした。version が26になっちゃったけど。
 
 ## 更新
 ```
@@ -24,3 +24,8 @@ git push origin master
 git clone
 sh setup.sh
 ```
+
+## ファイルを消す
+git rm --cached file   # --cached でファイルを残して管理対象から外す
+
+管理対象から外したら、.gitignore に登録しておくのを忘れないように。

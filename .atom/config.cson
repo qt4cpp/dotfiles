@@ -1,10 +1,15 @@
 "*":
+  "autocomplete-python":
+    suggestionPriority: 2
+    useKite: false
+    useSnippets: "all"
   autosave:
     enabled: true
   core:
     disabledPackages: [
       "recent-files"
     ]
+    telemetryConsent: "limited"
   editor:
     fontFamily: "MigMix-1M-Regular"
     fontSize: 14
@@ -17,5 +22,7 @@
     userId: "4f9c913e445cf770306d2f5e8848f9532ba8770b"
   "recent-files":
     updated: false
+  "terminal-plus":
+    style: {}
   welcome:
     showOnStartup: false

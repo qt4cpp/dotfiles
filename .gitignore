@@ -1,5 +1,13 @@
 *.mm
 .#*
-#*#
+#*
 .freemind/log.*
-#.rdb
+*.rdb
+.atom/.apm/
+.atom/.node-gyp/
+.atom/compile-cache/
+.atom/npm-debug.log
+.atom/packages/
+.atom/projects.cson
+.atom/storage/
+.atom/blob-store

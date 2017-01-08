@@ -25,7 +25,7 @@ function fish_prompt --description 'Write out the prompt'
   end
 
   #printf "[%s@%s %s%s%s]%s " $USER (hostname -s) (set_color $fish_color_cwd) $pwd (set_color normal) $prompt_symbol
-  printf "%s%s " (set_color $fish_color_cwd)  (set_color normal) $prompt_symbol
+  printf "%s%s " (set_color $fish_color_cwd) $branch_name (set_color normal) $prompt_symbol
   #printf "%s " (set_color normal) $prompt_symbol
 end
 

@@ -3,6 +3,7 @@
 #*
 .freemind/log.*
 *.rdb
+.emacs.d/
 .atom/.apm/
 .atom/.node-gyp/
 .atom/compile-cache/

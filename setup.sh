@@ -7,7 +7,6 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # install app by homebrew
 sh brew.sh
 
-
 ## dotfiles Download github
 DOT_DIRECTORY="${HOME}/dotfiles"
 DOT_TARBALL="https://github.com/qt4cpp/dotfiles/tarball/master"
@@ -29,6 +28,11 @@ if [ ! -d ${DOT_DIRECTORY} ]; then
   echo $(tput setaf 2)Download dotfiles complete!. ✔︎$(tput sgr0)
 fi
 
+# Spacemacsをインストール
+EMACS_DIR="${HOME}/.emacs.d"
+SPACEMACS_URL="https://github.com/syl20bnr/spacemacs"
+mkdir -p ${EMACS_DIR}
+git clone ${SPACEMACS_URL} $EMACS_DIR
 
 ## Simlink
 cd ${DOT_DIRECTORY}

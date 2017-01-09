@@ -14,4 +14,4 @@
   ss = status
   d = diff
   a = add
-  com = commit
+  c = commit

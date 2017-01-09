@@ -1,14 +1,18 @@
 # pyenv
 status --is-interactive; and . (pyenv init -| psub)
+
+
 # virtualenv & virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Documents/programming/python
 #source $HOME/.pyenv/versions/3.6.0/bin/virtualenvwrapper.sh
 
+
 # git branch
 function git_branch
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
 end
+
 
 # prompt
 function fish_prompt --description 'Write out the prompt'
@@ -29,6 +33,7 @@ function fish_prompt --description 'Write out the prompt'
   #printf "%s " (set_color normal) $prompt_symbol
 end
 
+
 # right_prompt
 function fish_right_prompt -d "Right Prompt"
   set -l home_escaped (echo -n $HOME | sed 's/\//\\\\\//g')
@@ -40,6 +45,8 @@ function fish_right_prompt -d "Right Prompt"
   set_color normal
 end
 
+
+# After cd, do ls
 function cd
   if test (count $argv) -eq 0
     return 0

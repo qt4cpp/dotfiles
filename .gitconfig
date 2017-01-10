@@ -11,7 +11,7 @@
 	trustExitCode = true
 [alias]
   s = status -s
-  ss = status
+  st = status
   d = diff
   a = add
-  c = commit
+  ci = commit

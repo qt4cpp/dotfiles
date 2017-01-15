@@ -38,10 +38,11 @@ end
 function fish_right_prompt -d "Right Prompt"
   set -l home_escaped (echo -n $HOME | sed 's/\//\\\\\//g')
   set -l pwd (echo -n (prompt_pwd) | sed "s/^$home_escaped/~/" | sed 's/ /%20/g')
+  set -l now (date "+[%H:%M]")
 
   set_color aa2
   #printf " <%s>" (set_color $fish_color_cwd) $pwd (set_color normal)
-  printf " [%s]"   $pwd
+  printf " [%s] %s"   $pwd $now
   set_color normal
 end
 

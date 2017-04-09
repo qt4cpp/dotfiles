@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<root>
+    <appdef>
+        <appname>EMACS</appname>
+        <equal>org.gnu.emacs</equal>
+    </appdef>
+
+    <devicevendordef>
+      <vendorname>APPLE</vendorname>
+      <vendorid>0x0000</vendorid>
+    </devicevendordef>
+    <deviceproductdef>
+      <productname>Apple_Wireless_Keyboard</productname>
+      <productid>0x0000</productid>
+    </deviceproductdef>
+
+        
+    <item>
+        <name>Underscore(ro) to Control_R</name>
+        <appendix>Underscore to ctrl</appendix>
+        <identifier>private.underscore_to_control</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, KeyCode::CONTROL_R</autogen>
+    </item>
+
+    <item>
+      <name>Ctrl-@ (on Japanese-keyboard) to Escape</name>
+      <appendix> ctrl-atmark to escape</appendix>
+      <identifier>private.ctrl_atmark_to_escape</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::JIS_ATMARK, ModifierFlag::CONTROL_L,
+        KeyCode::ESCAPE
+      </autogen>
+    </item>
+      
+
+    <item>
+        <name>F19 to CapsLock on Apple keyboard.</name>
+        <appendix>Otherwise, F19 to Control.</appendix>
+        <identifier>private.capslock_hack_f19</identifier>
+        <block>
+            <device_only>DeviceVendor::APPLE_INC, DeviceProduct::ANY</device_only>
+            <autogen>__KeyToKey__ KeyCode::F19, KeyCode::CAPSLOCK</autogen>
+        </block>
+        <block>
+            <autogen>__KeyToKey__ KeyCode::F19, KeyCode::CONTROL_L</autogen>
+        </block>
+    </item>
+
+    <item>
+        <name>Fn key to Option_R only Emacs</name>
+        <identifier>private.emacsFn_to_OptionR</identifier>
+        <only>EMACS</only>
+        <autogen> __KeyToKey__ KeyCode::FN, KeyCode::OPTION_R</autogen>
+    </item>
+
+    <item>
+        <name>Disable CapsLock change to F19 on Emacs</name>
+        <appendix>change to Option_R</appendix>
+        <identifier>private.emacsDisableCapslock</identifier>
+        <only>EMACS</only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::F19,            KeyCode::OPTION_R,
+        </autogen>
+    </item>
+
+
+    <item>
+        <name>Control to CapsLock on non-Apple keyboard.</name>
+        <identifier>private.control_to_capslock_on_non_apple_keyboard</identifier>
+        <block>
+            <device_not>DeviceVendor::APPLE_INC, DeviceProduct::ANY</device_not>
+            <autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::CAPSLOCK</autogen>
+        </block>
+    </item>
+
+    <item>
+        <name>EISUU to Option_L except Virtual Machine</name>
+        <appendix>(+ When you type EISUU only, send EISUU)</appendix>
+        <not>VIRTUALMACHINE</not>
+        <identifier>private.jis_eisuu2optionL_eisuu</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::OPTION_L, KeyCode::JIS_EISUU</autogen>
+    </item>
+
+    <item>
+        <name>KANA to Option_L except Virtual Machine</name>
+        <appendix>(+ When you type KANA only, send KANA)</appendix>
+        <not>VIRTUALMACHINE</not>
+        <identifier>private.jis_kana2optionL_kana</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_KANA, KeyCode::OPTION_L, KeyCode::JIS_KANA</autogen>
+    </item>
+
+    <item>
+        <name>F19 to F19</name>
+        <appendix>(F19 to Hyper (ctrl+shift+cmd+opt). Only, F19)</appendix>
+        <identifier>private.f192f19</identifier>
+        <autogen>
+            --KeyOverlaidModifier--
+            KeyCode::F19,
+            KeyCode::COMMAND_L,
+            ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+            KeyCode::F19
+        </autogen>
+    </item>
+
+    <item>
+      <name>F18 to Fn key</name>
+      <appendix></appendix>
+      <identifier>private.f18_to_Fn</identifier>
+    </item>
+    
+    <item>
+        <name>Hyper+space To Enter</name>
+        <appendix>Hyper(cmd+ctrl+shift+opt)+space, send enter</appendix>
+        <identifier>private.hyperspace2enter</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::SPACE, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+            KeyCode::ENTER
+        </autogen>
+    </item>
+    <item>
+        <name>Hyper+J To Down</name>
+        <appendix>Hyper(cmd+ctrl+shift+opt)+J, send down</appendix>
+        <identifier>private.hyperj2down</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::J, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+            KeyCode::CURSOR_DOWN
+        </autogen>
+    </item>
+    <item>
+        <name>Hyper+K To Up</name>
+        <appendix>Hyper(cmd+ctrl+shift+opt)+k, send up</appendix>
+        <identifier>private.hyperk2up</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::K, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+            KeyCode::CURSOR_UP
+        </autogen>
+    </item>
+    <item>
+        <name>Hyper+H To Left</name>
+        <appendix>Hyper(cmd+ctrl+shift+opt)+h, send left</appendix>
+        <identifier>private.hyperh2left</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::H, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+            KeyCode::CURSOR_LEFT
+        </autogen>
+    </item>
+    <item>
+        <name>Hyper+L To Right</name>
+        <appendix>Hyper(cmd+ctrl+shift+opt)+l, send right</appendix>
+        <identifier>private.hyperl2right</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::L, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+            KeyCode::CURSOR_RIGHT
+        </autogen>
+    </item>
+    <item>
+        <name>Hyper+Tab To Capslock</name>
+        <appendix>Hyper(cmd+ctrl+shift+opt)+tab, send capslock</appendix>
+        <identifier>private.hypertab2capslock</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::TAB, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+            KeyCode::CAPSLOCK
+        </autogen>
+    </item>
+    <item>
+      <name>Sticky Shift with semicolon</name>
+      <appendix>available only when push ;+alphabet</appendix>
+      <identifier>private.semicolon_stickyshift</identifier>
+      <autogen>__KeyOverlaidModifier__ KeyCode::SEMICOLON, KeyCode::SHIFT_L, KeyCode::SEMICOLON</autogen>
+    </item>
+    
+    <item>
+      <name>Apple original function key on 0x0000 device</name>
+      <appendix>Apple keyboard lost own ID</appendix>
+      <identifier>private.apple_original_function_key</identifier>
+      <device_only>DeviceVendor::APPLE, DeviceProduct::Apple_Wireless_Keyboard</device_only>
+      <autogen>__KeyToKey__ KeyCode::F18, KeyCode::FN </autogen>
+      <autogen>__KeyToKey__ KeyCode::F1, ModifierFlag::FN, KeyCode::F1</autogen>
+      <autogen>__KeyToKey__ KeyCode::F2, ModifierFlag::FN, KeyCode::F2</autogen>
+      <autogen>__KeyToKey__ KeyCode::F3, ModifierFlag::FN, KeyCode::F3</autogen>
+      <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::FN, KeyCode::F4</autogen>
+      <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::FN, KeyCode::F5</autogen>
+      <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::FN, KeyCode::F6</autogen>
+      <autogen>__KeyToKey__ KeyCode::F7, ModifierFlag::FN, KeyCode::F7</autogen>
+      <autogen>__KeyToKey__ KeyCode::F8, ModifierFlag::FN, KeyCode::F8</autogen>
+      <autogen>__KeyToKey__ KeyCode::F9, ModifierFlag::FN, KeyCode::F9</autogen>
+      <autogen>__KeyToKey__ KeyCode::F10, ModifierFlag::FN, KeyCode::F10</autogen>
+      <autogen>__KeyToKey__ KeyCode::F11, ModifierFlag::FN, KeyCode::F11</autogen>
+      <autogen>__KeyToKey__ KeyCode::F12, ModifierFlag::FN, KeyCode::F12</autogen>
+
+      <autogen>__KeyToKey__ KeyCode::F1, ConsumerKeyCode::BRIGHTNESS_DOWN,</autogen>
+      <autogen>__KeyToKey__ KeyCode::F2, ConsumerKeyCode::BRIGHTNESS_UP,</autogen>
+      <autogen>__KeyToKey__ KeyCode::F3, KeyCode::MISSION_CONTROL,</autogen>
+      <autogen>__KeyToKey__ KeyCode::F4, KeyCode::LAUNCHPAD,</autogen>
+      <autogen>__KeyToKey__ KeyCode::F7, ConsumerKeyCode::MUSIC_PREV,</autogen>
+      <autogen>__KeyToKey__ KeyCode::F8, ConsumerKeyCode::MUSIC_PLAY,</autogen>
+      <autogen>__KeyToKey__ KeyCode::F9, ConsumerKeyCode::MUSIC_NEXT,</autogen>
+      <autogen>__KeyToKey__ KeyCode::F10, ConsumerKeyCode::VOLUME_MUTE,</autogen>
+      <autogen>__KeyToKey__ KeyCode::F11, ConsumerKeyCode::VOLUME_DOWN,</autogen>
+      <autogen>__KeyToKey__ KeyCode::F12, ConsumerKeyCode::VOLUME_UP,</autogen>
+    </item>
+
+    
+</root>

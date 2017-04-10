@@ -408,7 +408,7 @@ you should place your code here."
   ;; ----------------------------------------
   ;; paradox
   ;; ----------------------------------------
-  (setq paradox-github-token '5e0029920f94087f9a382813a2e42af520947d50)
+  ;; (setq paradox-github-token 'token)
   ;; ----------------------------------------
   ;; google-translate
   ;; ----------------------------------------

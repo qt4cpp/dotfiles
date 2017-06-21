@@ -80,7 +80,8 @@ function cd
       set -g __fish_cd_direction prev
     end
 
-    if test $cd_status -ne -
+    if test $cd_status -ne 0
+      printf "%s\n" $cd_status
       return 1
     end
     ls

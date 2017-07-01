@@ -1,0 +1,13 @@
+{
+  "load_extensions": {
+    "nbextensions_configurator/config_menu/main": true,
+    "contrib_nbextensions_help_item/main": true,
+    "autosavetime/main": true,
+    "toc2/main": true,
+    "code_prettify/code_prettify": true
+  },
+  "autosavetime_starting_interval": "1",
+  "toc2": {
+    "toc_window_display": false
+  }
+}

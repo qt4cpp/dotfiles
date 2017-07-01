@@ -407,6 +407,10 @@ you should place your code here."
             (remove-if contain-japanese ad-return-value))))
 
   ;; ----------------------------------------
+  ;; paradox
+  ;; ----------------------------------------
+  ;; (setq paradox-github-token 'token)
+  ;; ----------------------------------------
   ;; google-translate
   ;; ----------------------------------------
   (defvar google-translate-english-chars "[:ascii:]"

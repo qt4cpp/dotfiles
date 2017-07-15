@@ -8,7 +8,7 @@
         {
             "complex_modifications": {
                 "parameters": {
-                    "basic.to_if_alone_timeout_milliseconds": 1000
+                    "basic.to_if_alone_timeout_milliseconds": 200
                 },
                 "rules": [
                     {
@@ -38,7 +38,7 @@
                         ]
                     },
                     {
-                        "description": "変換･無変換 to Alt and lang",
+                        "description": "変換･無変換 to Alt and lang for PC Keyboard",
                         "manipulators": [
                             {
                                 "from": {
@@ -64,6 +64,53 @@
                             {
                                 "from": {
                                     "key_code": "japanese_pc_nfer",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_option"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "lang2"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "かな・英数 to Alt when if push with other key",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "lang1",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_option"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "lang1"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "lang2",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -149,6 +196,7 @@
             "name": "Default profile",
             "selected": true,
             "simple_modifications": {
+                "international3": "grave_accent_and_tilde",
                 "open_bracket": "escape"
             },
             "virtual_hid_keyboard": {

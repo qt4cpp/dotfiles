@@ -180,21 +180,44 @@
                         "description": "Ctrl+m to Enter",
                         "manipulators": [
                             {
-                                "from":{
+                                "from": {
                                     "key_code": "m",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_control"
                                         ],
-                                        "optional":[
+                                        "optional": [
                                             "any"
                                         ]
-                                        
                                     }
                                 },
-                                "to":[
+                                "to": [
                                     {
                                         "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+h to Backspace",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace"
                                     }
                                 ],
                                 "type": "basic"

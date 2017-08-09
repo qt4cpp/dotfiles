@@ -175,6 +175,31 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Ctrl+m to Enter",
+                        "manipulators": [
+                            {
+                                "from":{
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ],
+                                        "optional":[
+                                            "any"
+                                        ]
+                                        
+                                    }
+                                },
+                                "to":[
+                                    {
+                                        "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -196,8 +221,7 @@
             "name": "Default profile",
             "selected": true,
             "simple_modifications": {
-                "international3": "grave_accent_and_tilde",
-                "open_bracket": "escape"
+                "international3": "grave_accent_and_tilde"
             },
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,

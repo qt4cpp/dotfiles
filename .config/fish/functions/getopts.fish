@@ -1,1 +1,1 @@
-/Users/Tatsuhiko/.config/fisherman/getopts/getopts.fish
+/Users/tatsu/.config/fisherman/getopts/getopts.fish

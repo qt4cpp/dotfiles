@@ -1,1 +1,1 @@
-/Users/Tatsuhiko/.config/fisherman/z/conf.d/z.fish
+/Users/tatsu/.config/fisherman/z/conf.d/z.fish

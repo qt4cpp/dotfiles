@@ -1,1 +1,1 @@
-/Users/Tatsuhiko/.config/fisherman/z/functions/__zo.fish
+/Users/tatsu/.config/fisherman/z/functions/__zo.fish

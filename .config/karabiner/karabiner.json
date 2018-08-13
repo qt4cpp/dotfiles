@@ -8,10 +8,14 @@
         {
             "complex_modifications": {
                 "parameters": {
+<<<<<<< HEAD
                     "basic.simultaneous_threshold_milliseconds": 50,
                     "basic.to_delayed_action_delay_milliseconds": 500,
                     "basic.to_if_alone_timeout_milliseconds": 1000,
                     "basic.to_if_held_down_threshold_milliseconds": 500
+=======
+                    "basic.to_if_alone_timeout_milliseconds": 200
+>>>>>>> 6cdb71bd3c85d099d12a4c8abbadf116509270d7
                 },
                 "rules": [
                     {
@@ -41,6 +45,7 @@
                         ]
                     },
                     {
+<<<<<<< HEAD
                         "description": "Left Command to Left Option",
                         "manipulators": [
                             {
@@ -84,6 +89,9 @@
                     },
                     {
                         "description": "変換･無変換 to Alt and lang",
+=======
+                        "description": "変換･無変換 to Alt and lang for PC Keyboard",
+>>>>>>> 6cdb71bd3c85d099d12a4c8abbadf116509270d7
                         "manipulators": [
                             {
                                 "from": {
@@ -109,6 +117,53 @@
                             {
                                 "from": {
                                     "key_code": "japanese_pc_nfer",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_option"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "lang2"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "かな・英数 to Alt when if push with other key",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "lang1",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_option"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "lang1"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "lang2",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -175,6 +230,7 @@
                         ]
                     },
                     {
+<<<<<<< HEAD
                         "description": "Emacs key bindings [control+h -> delete] (rev 2)",
                         "manipulators": [
                             {
@@ -227,12 +283,29 @@
                                         "optional": [
                                             "caps_lock",
                                             "option"
+=======
+                        "description": "Ctrl+m to Enter",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+>>>>>>> 6cdb71bd3c85d099d12a4c8abbadf116509270d7
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
+<<<<<<< HEAD
                                         "key_code": "delete_or_backspace"
+=======
+                                        "key_code": "return_or_enter"
+>>>>>>> 6cdb71bd3c85d099d12a4c8abbadf116509270d7
                                     }
                                 ],
                                 "type": "basic"
@@ -240,6 +313,7 @@
                         ]
                     },
                     {
+<<<<<<< HEAD
                         "description": "Emacs key bindings [control+m -> return] (rev 2)",
                         "manipulators": [
                             {
@@ -293,12 +367,29 @@
                                             "caps_lock",
                                             "shift",
                                             "option"
+=======
+                        "description": "Ctrl+h to Backspace",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+>>>>>>> 6cdb71bd3c85d099d12a4c8abbadf116509270d7
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
+<<<<<<< HEAD
                                         "key_code": "return_or_enter"
+=======
+                                        "key_code": "delete_or_backspace"
+>>>>>>> 6cdb71bd3c85d099d12a4c8abbadf116509270d7
                                     }
                                 ],
                                 "type": "basic"
@@ -473,6 +564,7 @@
             ],
             "name": "Default profile",
             "selected": true,
+<<<<<<< HEAD
             "simple_modifications": [
                 {
                     "from": {
@@ -522,6 +614,10 @@
                     "basic.to_if_held_down_threshold_milliseconds": 500
                 },
                 "rules": []
+=======
+            "simple_modifications": {
+                "international3": "grave_accent_and_tilde"
+>>>>>>> 6cdb71bd3c85d099d12a4c8abbadf116509270d7
             },
             "devices": [
                 {

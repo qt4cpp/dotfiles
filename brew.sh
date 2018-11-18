@@ -14,7 +14,7 @@ if type "brew" > /dev/null 2>&1; then
   local -a desired_formulae=(
     'brew-cask'
     'coreutils'
-    'ffmpeg --with-faac --with-fdk-aac --with-ffplay --with-fontconfig --with-freetype --with-frei0r --with-libass --with-libbluray --with-libcaca --with-libquvi --with-libsoxr --with-libvidstab --with-libvorbis --with-libvpx --with-opencore-amr --with-openjpeg --with-openssl --with-opus --with-rtmpdump --with-speex --with-theora --with-tools --with-x265'
+    'ffmpeg --with-fdk-aac --with-libass --with-libsoxr --with-libvidstab --with-opencore-amr --with-openh264 --with-openjpeg --with-openssl --with-rtmpdump --with-sdl2 --with-tools --with-x265 --with-srt --with-fontconfig --with-freetype --with-frei0r --with-libbluray --with-libcaca --with-libvorbis --with-libvpx --with-opus --with-speex --with-theora --with-wavpack --with-webp'
     'git'
     'go'
     'imagemagick --with-webp'

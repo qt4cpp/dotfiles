@@ -41,7 +41,53 @@
                         ]
                     },
                     {
+<<<<<<< HEAD
+                        "description": "Left Command to Left Option",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_command",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_option"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Left Option to Left Command",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_option",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_command"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "変換･無変換 to Alt and lang",
+=======
                         "description": "変換･無変換 to Alt and lang for PC Keyboard",
+>>>>>>> 6cdb71bd3c85d099d12a4c8abbadf116509270d7
                         "manipulators": [
                             {
                                 "from": {
@@ -191,6 +237,7 @@
                                         ],
                                         "optional": [
                                             "any"
+>>>>>>> 6cdb71bd3c85d099d12a4c8abbadf116509270d7
                                         ]
                                     }
                                 },

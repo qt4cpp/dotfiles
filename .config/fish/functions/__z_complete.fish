@@ -1,1 +1,1 @@
-/Users/Tatsuhiko/.config/fisherman/z/functions/__z_complete.fish
+/Users/tatsu/.config/fisherman/z/functions/__z_complete.fish

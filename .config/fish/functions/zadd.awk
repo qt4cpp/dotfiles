@@ -1,1 +1,1 @@
-/Users/Tatsuhiko/.config/fisherman/z/functions/zadd.awk
+/Users/tatsu/.config/fisherman/z/functions/zadd.awk

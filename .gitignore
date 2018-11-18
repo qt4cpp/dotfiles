@@ -12,3 +12,7 @@
 .atom/projects.cson
 .atom/storage/
 .atom/blob-store
+.config/QtProject
+.config/darktable
+.config/mpv/watch_later
+\#.*\#

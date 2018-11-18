@@ -18,6 +18,7 @@ values."
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
+     ruby
      javascript
      html
      csv
@@ -275,38 +276,39 @@ you should place your code here."
   ;; ----------------------------------------
   ;; IME on Mac
   ;; ----------------------------------------
-  (if (eq system-type 'darwin)
-      (progn
-        ;; IME関連機能の有効化とバージョン毎に異なる値を定義しとく
-        (setq default-input-method "MacOSX") ; IMEパッチを当てたEmacsが必要。
-        (setq mac-US-IME-name "com.apple.keylayout.US")                        ; ことえりじゃない英語キーボード。
-        (setq mac-kotoeri-US-name "com.apple.inputmethod.Kotoeri.Roman")       ; ことえりの英語キーボード
-        (setq mac-kotoeri-JP-name "com.apple.inpuutmethod.Kotoeri.Japanese")   ; ことえりの日本語キーボード
-        (setq mac-ATOK-IME-name "com.justsystems.inputmethod.atok29.Japanese") ; atok2016 -> atok29
-        ;; IME ON/OFF時のカーソルカラー
-        (mac-set-input-method-parameter mac-US-IME-name 'cursor-color "aqua") ; aqua は spacemacs-darkの色
-        (mac-set-input-method-parameter mac-ATOK-IME-name 'cursor-color "red")
-        (add-hook 'minibuffer-setup-hook
-                  '(lambda ()
-                     (mac-toggle-input-method nil)))
- 
-        ;; (mac-get-current-input-source) この関数を評価するとIMEの名前を評価される。`'
+  ;; (if (eq system-type 'darwin)
+;;       (progn
+;;         ;; IME関連機能の有効化とバージョン毎に異なる値を定義しとく
+;;         (setq default-input-method "MacOSX") ; IMEパッチを当てたEmacsが必要。
+;;         (setq mac-US-IME-name "com.apple.keylayout.US")                        ; ことえりじゃない英語キーボード。
+;;         (setq mac-kotoeri-US-name "com.apple.inputmethod.Kotoeri.Roman")       ; ことえりの英語キーボード
+;;         (setq mac-kotoeri-JP-name "com.apple.inpuutmethod.Kotoeri.Japanese")   ; ことえりの日本語キーボード
+;;         (setq mac-ATOK-US-name "com.justsystems.inputmethod.atok31.Roman")     ; Atok 英字入力
+;;         (setq mac-ATOK-IME-name "com.justsystems.inputmethod.atok31.Japanese") ; atok2016 -> atok29
+;;         ;; IME ON/OFF時のカーソルカラー
+;;         (mac-set-input-method-parameter mac-ATOK-US-name 'cursor-color "aqua") ; aqua は spacemacs-darkの色
+;;         (mac-set-input-method-parameter mac-ATOK-IME-name 'cursor-color "LightGreen")
+;;         (add-hook 'minibuffer-setup-hook
+;;                   '(lambda ()
+;;                      (mac-toggle-input-method nil)))
 
-        ;; evilのノーマルステートではIMEをoffにする。
-        ;; (add-hook 'evil-normal-state-entry-hook
-        ;;           '(lambda ()
-        ;;              (mac-toggle-input-method nil)))
-        ;; (defun mac-selected-keyboard-input-source-change-hook-func ()
-        ;;   ;; 日本語入力するときは挿入モードに変更する
-        ;;   (when (string-match "\\.Japanese$" (mac-get-current-input-source))
-        ;;     (evil-insert-state)))
+;;         ;; (mac-get-current-input-source) この関数を評価するとIMEの名前を評価される。`'
 
-        ;; (add-hook 'mac-selected-keyboard-input-source-change-hook
-        ;;           'mac-selected-keyboard-input-source-change-hook-func)
+;;         ;; evilのノーマルステートではIMEをoffにする。
+;;         (add-hook 'evil-normal-state-entry-hook
+;;                   '(lambda ()
+;;                      (mac-toggle-input-method nil)))
+;;         ;; (defun mac-selected-keyboard-input-source-change-hook-func ()
+;;         ;;   ;; 日本語入力するときは挿入モードに変更する
+;;           ;(when (string-match "\\.Japanese$" (mac-get-current-input-source))
+;;           ;  (evil-insert-state)))
 
-        ;; ;; IME ON時のモードラインタイトル
-        ;; (mac-set-input-method-parameter "com.justsystems.inputmethod.atok29.Japanese" `title "[あ]")
-        ))
+;; ;;        (add-hook 'mac-selected-keyboard-input-source-change-hook
+;; ;;                  'mac-selected-keyboard-input-source-change-hook-func)
+
+;;         ;; ;; IME ON時のモードラインタイトル
+;;         (mac-set-input-method-parameter mac-ATOK-IME-name `title "[あ]")
+;;         ))
 
   (if (eq window-system 'mac)
       (progn
@@ -348,17 +350,19 @@ you should place your code here."
   ;; org-capture
   ;; ----------------------------------------
   (setq org-capture-templates
-        '(("j" "Journal" entry(file+datetree "~/Dropbox/org/log.org")
-           "* %(concat (format-time-string \"%y%m%d\")) %? :Journal:\n %U\n %i\n %a\n")
-          ("w" "Weekly Review" entry(file+datetree "~/Dropbox/org/log.org")
+        '(("d" "Diary" entry(file+datetree "~/org/log.org")
+           "* %(concat (format-time-string \"%y%m%d\")) %? :Diary:\n %U\n %i\n %a\n")
+          ("j" "Journal" entry(file+datetree "~/org/log.org")
+           "* %(concat (format-time-string \"%R\")) %? :Journal:\n%i\n")
+          ("w" "Weekly Review" entry(file+datetree "~/org/log.org")
            "* %?:Log:Review:\n %U\n %i\n %a\n" )
-          ("r" "Review" entry(file+headline "~/Dropbox/org/log.org" "Inbox")
-           "* %(concat (format-time-string \"%y%m%d\")) %? :Review:\n%[~/Dropbox/org/4ld]" :prepend t)
-          ("b" "Reading book note" entry(file "~/Dropbox/org/books.org")
-           "* %?\n %[~/Dropbox/org/books_template]" :prepend t)
-          ("d" "Daily Journal" plain(file+function "~/Dropbox/org/log.org" my/capture_datetree)
+          ("r" "Review" entry(file+headline "~/org/log.org" "Inbox")
+           "* %(concat (format-time-string \"%y%m%d\")) %? :Review:\n%[~/org/4ld]" :prepend t)
+          ("b" "Reading book note" entry(file "~/org/books.org")
+           "* %?\n %[~/org/books_template]" :prepend t)
+          ("d" "Daily Journal" plain(file+function "~/org/log.org" my/capture_datetree)
            "\n*** %(format-time-string \"%y%m%d\") %? :Journal: \n %U\n%i\n" )
-          ("t" "Timeline Journal" plain(file (concat "~/Dropbox/Journal-" (format-time-string "%Y-%m") ".md"))
+          ("t" "Timeline Journal" plain(file (concat "~/Journal-" (format-time-string "%Y-%m") ".md"))
            "## %(format-time-string \"%Y-%m-%d %H:%M\")\n%?")
           ))
 
@@ -455,11 +459,11 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(google-translate-default-source-language "en")
- '(google-translate-default-target-language "ja")
+ '(google-translate-default-source-language "en" t)
+ '(google-translate-default-target-language "ja" t)
  '(package-selected-packages
    (quote
-    (winum unfill org-category-capture fuzzy web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc company-tern dash-functional tern coffee-mode powerline org alert log4e gntp markdown-mode parent-mode projectile pkg-info epl flx smartparens iedit anzu evil goto-chg undo-tree highlight diminish company bind-map bind-key yasnippet packed f dash s helm avy helm-core async auto-complete popup package-build web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data csv-mode insert-shebang fish-mode company-shell yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic paradox spinner company-statistics adaptive-wrap ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spacemacs-theme spaceline restart-emacs request rainbow-delimiters quelpa popwin persp-mode pcre2el org-projectile org-present org-pomodoro org-plus-contrib org-download org-bullets open-junk-file neotree mwim move-text mmm-mode markdown-toc macrostep lorem-ipsum linum-relative link-hint info+ indent-guide ido-vertical-mode hydra hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio gnuplot gh-md flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump define-word column-enforce-mode clean-aindent-mode bracketed-paste auto-yasnippet auto-highlight-symbol auto-compile aggressive-indent ace-window ace-link ace-jump-helm-line ac-ispell))))
+    (rvm ruby-tools ruby-test-mode rubocop rspec-mode robe rbenv rake minitest chruby bundler inf-ruby winum unfill org-category-capture fuzzy web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc company-tern dash-functional tern coffee-mode powerline org alert log4e gntp markdown-mode parent-mode projectile pkg-info epl flx smartparens iedit anzu evil goto-chg undo-tree highlight diminish company bind-map bind-key yasnippet packed f dash s helm avy helm-core async auto-complete popup package-build web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data csv-mode insert-shebang fish-mode company-shell yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic paradox spinner company-statistics adaptive-wrap ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spacemacs-theme spaceline restart-emacs request rainbow-delimiters quelpa popwin persp-mode pcre2el org-projectile org-present org-pomodoro org-plus-contrib org-download org-bullets open-junk-file neotree mwim move-text mmm-mode markdown-toc macrostep lorem-ipsum linum-relative link-hint info+ indent-guide ido-vertical-mode hydra hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio gnuplot gh-md flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump define-word column-enforce-mode clean-aindent-mode bracketed-paste auto-yasnippet auto-highlight-symbol auto-compile aggressive-indent ace-window ace-link ace-jump-helm-line ac-ispell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

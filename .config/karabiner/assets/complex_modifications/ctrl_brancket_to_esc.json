@@ -1,0 +1,67 @@
+{
+    "title": "Setting Application specific",
+    "rules": [
+        {
+            "description": "Ctrl+[ to ESC(terminal, emacs, vim なら半角も一緒に)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "open_bracket",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "escape"
+                        },
+                        {
+                            "key_code": "japanese_eisuu"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "keyboard_type_if",
+                            "keyboard_types": [
+                                "ansi"
+                            ]
+                        },
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$", "^org\\.vim\\.", "^org\\.gnu\\.Emacs"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "open_bracket",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "escape"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "keyboard_type_if",
+                            "keyboard_types": [
+                                "ansi"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

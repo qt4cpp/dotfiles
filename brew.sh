@@ -49,13 +49,11 @@ if type "brew" > /dev/null 2>&1; then
 
     [[ $? ]] && echo "$(tput setaf 2)Installed missing formulae ✔︎$(tput sgr0)"
   fi
-
-  # Emacs suzuki-san ver
-  brew tap suzuki/emacs
-  brew install suzuki/emacs/emacs --with-cocoa --HEAD --imagemagick --libsvg --gnutls
-  brew linkapps emacs
   
-  brew linkapps mpv
+  # install emacs-plus
+  brew tap d12frosted/emacs-plus
+  brew install emacs-plus --with-spacemacs-icon
+  ln -s /usr/local/opt/emacs-plus/Emacs.app /Applications
   
   brew cleanup
   

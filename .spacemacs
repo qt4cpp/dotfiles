@@ -48,6 +48,7 @@ values."
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages
    '(
+     emms
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -350,17 +351,17 @@ you should place your code here."
   ;; org-capture
   ;; ----------------------------------------
   (setq org-capture-templates
-        '(("d" "Diary" entry(file+datetree "~/org/log.org")
+        '(("d" "Diary" entry(file+datetree "~/Documents/org/log.org")
            "* %(concat (format-time-string \"%y%m%d\")) %? :Diary:\n %U\n %i\n %a\n")
-          ("j" "Journal" entry(file+datetree "~/org/log.org")
+          ("j" "Journal" entry(file+datetree "~/Documents/org/log.org")
            "* %(concat (format-time-string \"%R\")) %? :Journal:\n%i\n")
-          ("w" "Weekly Review" entry(file+datetree "~/org/log.org")
+          ("w" "Weekly Review" entry(file+datetree "~/Documents/org/log.org")
            "* %?:Log:Review:\n %U\n %i\n %a\n" )
-          ("r" "Review" entry(file+headline "~/org/log.org" "Inbox")
+          ("r" "Review" entry(file+headline "~/Documents/org/log.org" "Inbox")
            "* %(concat (format-time-string \"%y%m%d\")) %? :Review:\n%[~/org/4ld]" :prepend t)
           ("b" "Reading book note" entry(file "~/org/books.org")
-           "* %?\n %[~/org/books_template]" :prepend t)
-          ("d" "Daily Journal" plain(file+function "~/org/log.org" my/capture_datetree)
+           "Publisher:  Author:  Price: \n?\n Title: Author: Price:\n" :prepend t)
+          ("d" "Daily Journal" plain(file+function "~/Documents/org/log.org" my/capture_datetree)
            "\n*** %(format-time-string \"%y%m%d\") %? :Journal: \n %U\n%i\n" )
           ("t" "Timeline Journal" plain(file (concat "~/Journal-" (format-time-string "%Y-%m") ".md"))
            "## %(format-time-string \"%Y-%m-%d %H:%M\")\n%?")
@@ -463,7 +464,7 @@ you should place your code here."
  '(google-translate-default-target-language "ja" t)
  '(package-selected-packages
    (quote
-    (rvm ruby-tools ruby-test-mode rubocop rspec-mode robe rbenv rake minitest chruby bundler inf-ruby winum unfill org-category-capture fuzzy web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc company-tern dash-functional tern coffee-mode powerline org alert log4e gntp markdown-mode parent-mode projectile pkg-info epl flx smartparens iedit anzu evil goto-chg undo-tree highlight diminish company bind-map bind-key yasnippet packed f dash s helm avy helm-core async auto-complete popup package-build web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data csv-mode insert-shebang fish-mode company-shell yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic paradox spinner company-statistics adaptive-wrap ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spacemacs-theme spaceline restart-emacs request rainbow-delimiters quelpa popwin persp-mode pcre2el org-projectile org-present org-pomodoro org-plus-contrib org-download org-bullets open-junk-file neotree mwim move-text mmm-mode markdown-toc macrostep lorem-ipsum linum-relative link-hint info+ indent-guide ido-vertical-mode hydra hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio gnuplot gh-md flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump define-word column-enforce-mode clean-aindent-mode bracketed-paste auto-yasnippet auto-highlight-symbol auto-compile aggressive-indent ace-window ace-link ace-jump-helm-line ac-ispell))))
+    (emms org-mime rvm ruby-tools ruby-test-mode rubocop rspec-mode robe rbenv rake minitest chruby bundler inf-ruby winum unfill org-category-capture fuzzy web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc company-tern dash-functional tern coffee-mode powerline org alert log4e gntp markdown-mode parent-mode projectile pkg-info epl flx smartparens iedit anzu evil goto-chg undo-tree highlight diminish company bind-map bind-key yasnippet packed f dash s helm avy helm-core async auto-complete popup package-build web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data csv-mode insert-shebang fish-mode company-shell yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic paradox spinner company-statistics adaptive-wrap ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spacemacs-theme spaceline restart-emacs request rainbow-delimiters quelpa popwin persp-mode pcre2el org-projectile org-present org-pomodoro org-plus-contrib org-download org-bullets open-junk-file neotree mwim move-text mmm-mode markdown-toc macrostep lorem-ipsum linum-relative link-hint info+ indent-guide ido-vertical-mode hydra hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio gnuplot gh-md flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump define-word column-enforce-mode clean-aindent-mode bracketed-paste auto-yasnippet auto-highlight-symbol auto-compile aggressive-indent ace-window ace-link ace-jump-helm-line ac-ispell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

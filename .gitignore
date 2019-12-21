@@ -1,9 +1,12 @@
 *.mm
 .#*
 #*
+.zsh_history
 .freemind/log.*
 *.rdb
-.emacs.d/
+.recentf
+auto-save-list/
+projectile-bookmarks.eld
 .atom/.apm/
 .atom/.node-gyp/
 .atom/compile-cache/

@@ -1,0 +1,1 @@
+/Users/tatsu/.emacs.d/straight/repos/pyenv-mode-auto/pyenv-mode-auto.el

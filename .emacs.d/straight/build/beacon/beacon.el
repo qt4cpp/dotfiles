@@ -1,0 +1,1 @@
+/Users/tatsu/.emacs.d/straight/repos/beacon/beacon.el

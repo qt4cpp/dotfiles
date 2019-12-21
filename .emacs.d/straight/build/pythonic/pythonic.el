@@ -1,0 +1,1 @@
+/Users/tatsu/.emacs.d/straight/repos/pythonic/pythonic.el

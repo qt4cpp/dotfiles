@@ -1,0 +1,1 @@
+/Users/tatsu/.emacs.d/straight/repos/highlight-symbol.el/highlight-symbol.el

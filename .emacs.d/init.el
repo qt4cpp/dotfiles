@@ -70,12 +70,13 @@
   :custom
   (doom-themes-enable-italic t)
   (doom-themes-enable-bold t)
-  :custom-face
-  (doom-modeline-bar ((t (:background "#6272a4"))))
   :config
   (load-theme 'doom-dracula t)
   (doom-themes-neotree-config)
-  (doom-themes-org-config))
+  (doom-themes-org-config)
+  :custom-face
+  (doom-modeline-bar ((t (:background "#6272a4"))))
+)
 
 (use-package doom-modeline
   :straight t
@@ -87,7 +88,7 @@
   (doom-modeline-height 1)
   :custom-face
   (mode-line ((nil (:height 140))))
-  (mode-line-inactive ((nil (:height 140))))
+  (mode-line-inactive ((nil (:height 100))))
   :hook
   (after-init . doom-modeline-mode)
   :config
@@ -112,6 +113,15 @@
   :straight t
   :hook
   (prog-mode . rainbow-delimiters-mode))
+
+(use-package highlight-symbol
+  :straight t
+  :hook
+  (prog-mode . highlight-symbol-mode)
+  (prog-mode . highlight-symbol-nav-mode)
+  :custom
+  (highlight-symbol-idle-delay 0.5)
+  (highlight-symbol-colors "RoyalBlue1"))
 
 (use-package which-key
   :straight t
@@ -158,12 +168,16 @@
 
 (use-package company
   :straight t
+  :custom
+  (company-idle-delay 0)		 ; default 0.5
+  (company-echo-delay 0)
+  (company-minimum-prefix-length 2)	 ; default 4
+  (company-selection-wrap-around t)
   :config
-  (global-company-mode)
-  (setq company-idle-delay 0)		 ; default 0.5
-  (setq company-minimum-prefix-length 2) ; default 4
-  (setq company-selection-wrap-around t)
-  (push 'company-lsp company-backends))
+  (push 'company-lsp company-backends)
+  :init
+  (global-company-mode t)
+)
 
 (use-package company-box
   :straight t
@@ -173,11 +187,14 @@
   :straight t
   :config
   (add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
+  :init
   (yas-global-mode 1))
   
 (use-package lsp-mode
   :straight t
-  :custom ((lsp-inhibit-message t)
+  :custom ((lsp-enable-snippet t)
+	   (lsp-document-sync-method 'incremental)
+	   (lsp-inhibit-message t)
 	   (lsp-message-project-root-warning t)
 	   (create-lockfiles nil))
   :hook (prog-major-mode . lsp-prog-major-mode-enable)
@@ -188,9 +205,13 @@
   :after lsp-mode
   :custom (scroll-margin 0)
   :hook (lsp-mode . lsp-ui-mode)
-  :config
+  :custom
   (lsp-ui-doc-enable t)
-  ;; (setq lsp-ui-doc-header t)
+  (lsp-ui-doc-header t)
+  (lsp-ui-doc-include-signature t)
+  (lsp-ui-doc-position 'top)		; top, bottom or at-point
+  (lsp-ui-doc-use-childframe t)
+  (lsp-ui-doc-use-webkit t)
   ;; (lsp-ui-doc-max-height 150)
   ;; (lsp-ui-doc-max-width 30)
   (lsp-ui-peek-enable t)
@@ -198,9 +219,14 @@
 
 (use-package company-lsp
   :straight t
-  :after (lsp-mode company yasnippet)
   :defines company-backends
   :functions company-backend-with-yas
+  :custom
+  (company-lsp-async t)
+  (company-lsp-enable-recompletion t)
+  (company-lsp-enable-snippet t)
+  :after
+  (:all lsp-mode lsp-ui company yasnippet)
   :init
   (push 'company-lsp company-backends)
   ;(cl-pushnew (company-backend-with-yas 'company-lsp) company-backends)
@@ -336,9 +362,9 @@
                                  (show-org-buffer "notes.org")))
 
 ;; hydra
-(defhydra hydra-avy (global-map "s-e" :exit t :hint nil)
+(defhydra hydra-avy (global-map "s-e" :hint nil :exit t)
   "
-Line^^       Region^^      Goto
+^Line^       ^Region^      ^Goto^
 ------------------------------------------------------------
 [_y_] yank   [_Y_] yank    [_c_] timed char  [_C_] char
 [_m_] move   [_M_] move    [_w_] word        [_W_] any word
@@ -356,3 +382,23 @@ Line^^       Region^^      Goto
   ("y" avy-copy-line)
   ("Y" avy-copy-region))
 
+(defhydra hydra-window (global-map "<f7>" :color red :hint nil)
+  "
+^Split^            ^size^
+^^^^^----------------------------------------
+[_v_] vertical     [_i_] enlarge
+[_h_] horizontal   [_m_] shrink
+[_o_] other-window [_j_] enlarge_horizontal
+[_1_] delete-other [_k_] shrink_horiozontal
+[_0_] delete-this  [_+_] balance-window"
+  ("v" split-window-horizontally)
+  ("h" split-window-vertically)
+  ("o" other-window)
+  ("1" delete-other-windows)
+  ("0" delete-window)
+  
+  ("i" enlarge-window)
+  ("m" shrink-window)
+  ("j" enlarge-window-horizontally)
+  ("k" shrink-window-horizontally)
+  ("+" balance-window))

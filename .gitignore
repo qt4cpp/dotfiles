@@ -19,3 +19,5 @@ projectile-bookmarks.eld
 .config/darktable
 .config/mpv/watch_later
 \#.*\#
+.emacs.d/straight/build-cache.el
+.emacs.d/.lsp-session-v1

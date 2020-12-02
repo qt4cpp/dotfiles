@@ -8,15 +8,11 @@
 
 (autoload 'imenu-list-noselect "imenu-list" "\
 Update and show the imenu-list buffer, but don't select it.
-If the imenu-list buffer doesn't exist, create it.
-
-\(fn)" t nil)
+If the imenu-list buffer doesn't exist, create it." t nil)
 
 (autoload 'imenu-list "imenu-list" "\
 Update and show the imenu-list buffer.
-If the imenu-list buffer doesn't exist, create it.
-
-\(fn)" t nil)
+If the imenu-list buffer doesn't exist, create it." t nil)
 
 (defvar imenu-list-minor-mode nil "\
 Non-nil if Imenu-List minor mode is enabled.
@@ -30,9 +26,12 @@ or call the function `imenu-list-minor-mode'.")
 
 (autoload 'imenu-list-minor-mode "imenu-list" "\
 Toggle Imenu-List minor mode on or off.
-With a prefix argument ARG, enable Imenu-List minor mode if ARG is
-positive, and disable it otherwise.  If called from Lisp, enable
-the mode if ARG is omitted or nil, and toggle it if ARG is `toggle'.
+
+If called interactively, enable Imenu-List minor mode if ARG is
+positive, and disable it if ARG is zero or negative.  If called
+from Lisp, also enable the mode if ARG is omitted or nil, and
+toggle it if ARG is `toggle'; disable the mode otherwise.
+
 \\{imenu-list-minor-mode-map}
 
 \(fn &optional ARG)" t nil)
@@ -42,9 +41,7 @@ Enable or disable `imenu-list-minor-mode' according to buffer's visibility.
 If the imenu-list buffer is displayed in any window, disable
 `imenu-list-minor-mode', otherwise enable it.
 Note that all the windows in every frame searched, even invisible ones, not
-only those in the selected frame.
-
-\(fn)" t nil)
+only those in the selected frame." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "imenu-list" '("imenu-list-")))
 

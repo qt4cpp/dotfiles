@@ -87,8 +87,8 @@
   (doom-modeline-minor-modes nil)
   (doom-modeline-height 1)
   :custom-face
-  (mode-line ((nil (:height 140))))
-  (mode-line-inactive ((nil (:height 100))))
+  (mode-line ((nil (:height 140 :background "#3f2022"))))
+  (mode-line-inactive ((nil (:height 100 :background "#000000"))))
   :hook
   (after-init . doom-modeline-mode)
   :config
@@ -360,6 +360,16 @@
     (find-file (concat "~/Documents/memo/" file))))
 (global-set-key (kbd "C-M-^") '(lambda () (interactive)
                                  (show-org-buffer "notes.org")))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; CSV-mode
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package csv-mode
+  :straight t
+  :config
+  (add-to-list 'auto-mode-alist '("\\.[Cc][Ss][Vv]\\'" . csv-mode))
+  (autoload 'csv-mode "csv-mode"
+    "Major mode for editing comma-separated value files." t))
 
 ;; hydra
 (defhydra hydra-avy (global-map "s-e" :hint nil :exit t)

@@ -7,9 +7,7 @@
 ;;; Generated autoloads from doom-modeline.el
 
 (autoload 'doom-modeline-init "doom-modeline" "\
-Initialize doom mode-line.
-
-\(fn)" nil nil)
+Initialize doom mode-line." nil nil)
 
 (autoload 'doom-modeline-set-main-modeline "doom-modeline" "\
 Set main mode-line.
@@ -18,49 +16,31 @@ If DEFAULT is non-nil, set the default mode-line for all buffers.
 \(fn &optional DEFAULT)" nil nil)
 
 (autoload 'doom-modeline-set-minimal-modeline "doom-modeline" "\
-Set minimal mode-line.
-
-\(fn)" nil nil)
+Set minimal mode-line." nil nil)
 
 (autoload 'doom-modeline-set-special-modeline "doom-modeline" "\
-Set sepcial mode-line.
-
-\(fn)" nil nil)
+Set sepcial mode-line." nil nil)
 
 (autoload 'doom-modeline-set-project-modeline "doom-modeline" "\
-Set project mode-line.
-
-\(fn)" nil nil)
+Set project mode-line." nil nil)
 
 (autoload 'doom-modeline-set-vcs-modeline "doom-modeline" "\
-Set vcs mode-line.
-
-\(fn)" nil nil)
+Set vcs mode-line." nil nil)
 
 (autoload 'doom-modeline-set-info-modeline "doom-modeline" "\
-Set Info mode-line.
-
-\(fn)" nil nil)
+Set Info mode-line." nil nil)
 
 (autoload 'doom-modeline-set-package-modeline "doom-modeline" "\
-Set package mode-line.
-
-\(fn)" nil nil)
+Set package mode-line." nil nil)
 
 (autoload 'doom-modeline-set-media-modeline "doom-modeline" "\
-Set media mode-line.
-
-\(fn)" nil nil)
+Set media mode-line." nil nil)
 
 (autoload 'doom-modeline-set-pdf-modeline "doom-modeline" "\
-Set pdf mode-line.
-
-\(fn)" nil nil)
+Set pdf mode-line." nil nil)
 
 (autoload 'doom-modeline-set-timemachine-modeline "doom-modeline" "\
-Set timemachine mode-line.
-
-\(fn)" nil nil)
+Set timemachine mode-line." nil nil)
 
 (autoload 'doom-modeline-set-helm-modeline "doom-modeline" "\
 Set helm mode-line.
@@ -79,6 +59,11 @@ or call the function `doom-modeline-mode'.")
 
 (autoload 'doom-modeline-mode "doom-modeline" "\
 Toggle doom-modeline on or off.
+
+If called interactively, enable Doom-Modeline mode if ARG is
+positive, and disable it if ARG is zero or negative.  If called
+from Lisp, also enable the mode if ARG is omitted or nil, and
+toggle it if ARG is `toggle'; disable the mode otherwise.
 
 \(fn &optional ARG)" t nil)
 

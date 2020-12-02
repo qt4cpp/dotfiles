@@ -275,7 +275,7 @@ theme face specs. These is a simplified spec. For example:
 
 (when (and (boundp 'custom-theme-load-path) load-file-name) (let* ((base (file-name-directory load-file-name)) (dir (expand-file-name "themes/" base))) (add-to-list 'custom-theme-load-path (or (and (file-directory-p dir) dir) base))))
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "doom-themes" '("doom-" "def-doom-theme")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "doom-themes" '("def-doom-theme" "doom-")))
 
 ;;;***
 
@@ -294,9 +294,7 @@ theme face specs. These is a simplified spec. For example:
 (autoload 'doom-themes-neotree-config "doom-themes-ext-neotree" "\
 Install doom-themes' neotree configuration.
 
-Includes an Atom-esque icon theme and highlighting based on filetype.
-
-\(fn)" nil nil)
+Includes an Atom-esque icon theme and highlighting based on filetype." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "doom-themes-ext-neotree" '("doom-")))
 
@@ -307,9 +305,7 @@ Includes an Atom-esque icon theme and highlighting based on filetype.
 ;;; Generated autoloads from doom-themes-ext-org.el
 
 (autoload 'doom-themes-org-config "doom-themes-ext-org" "\
-Enable custom fontification & improves theme integration with org-mode.
-
-\(fn)" nil nil)
+Enable custom fontification & improves theme integration with org-mode." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "doom-themes-ext-org" '("doom-")))
 
@@ -322,9 +318,7 @@ Enable custom fontification & improves theme integration with org-mode.
 (autoload 'doom-themes-treemacs-config "doom-themes-ext-treemacs" "\
 Install doom-themes' treemacs configuration.
 
-Includes an Atom-esque icon theme and highlighting based on filetype.
-
-\(fn)" nil nil)
+Includes an Atom-esque icon theme and highlighting based on filetype." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "doom-themes-ext-treemacs" '("doom-themes-")))
 
@@ -335,14 +329,10 @@ Includes an Atom-esque icon theme and highlighting based on filetype.
 ;;; Generated autoloads from doom-themes-ext-visual-bell.el
 
 (autoload 'doom-themes-visual-bell-fn "doom-themes-ext-visual-bell" "\
-Blink the mode-line red briefly. Set `ring-bell-function' to this to use it.
-
-\(fn)" nil nil)
+Blink the mode-line red briefly. Set `ring-bell-function' to this to use it." nil nil)
 
 (autoload 'doom-themes-visual-bell-config "doom-themes-ext-visual-bell" "\
-Enable flashing the mode-line on error.
-
-\(fn)" nil nil)
+Enable flashing the mode-line on error." nil nil)
 
 ;;;***
 

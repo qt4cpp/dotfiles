@@ -12,9 +12,7 @@ Set python shell VERSION.
 \(fn VERSION)" t nil)
 
 (autoload 'pyenv-mode-unset "pyenv-mode" "\
-Unset python shell version.
-
-\(fn)" t nil)
+Unset python shell version." t nil)
 
 (defvar pyenv-mode nil "\
 Non-nil if Pyenv mode is enabled.
@@ -28,6 +26,11 @@ or call the function `pyenv-mode'.")
 
 (autoload 'pyenv-mode "pyenv-mode" "\
 Minor mode for pyenv interaction.
+
+If called interactively, enable Pyenv mode if ARG is positive,
+and disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it if
+ARG is `toggle'; disable the mode otherwise.
 
 \\{pyenv-mode-map}
 

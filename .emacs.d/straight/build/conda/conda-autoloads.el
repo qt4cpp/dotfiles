@@ -7,9 +7,7 @@
 ;;; Generated autoloads from conda.el
 
 (autoload 'conda-env-deactivate "conda" "\
-Deactivate the current conda env.
-
-\(fn)" t nil)
+Deactivate the current conda env." t nil)
 
 (autoload 'conda-env-activate "conda" "\
 Switch to environment NAME, prompting if called interactively.
@@ -22,9 +20,7 @@ Switch to environment PATH, prompting if called interactively.
 \(fn &optional PATH)" t nil)
 
 (autoload 'conda-env-list "conda" "\
-List all available conda environments in a temp buffer.
-
-\(fn)" t nil)
+List all available conda environments in a temp buffer." t nil)
 
 (autoload 'conda-with-env-shell-command "conda" "\
 With environment NAME active, execute the shell string COMMAND.
@@ -37,23 +33,17 @@ Activate the current env in a newly opened shell PROCESS.
 \(fn PROCESS)" nil nil)
 
 (autoload 'conda-env-initialize-interactive-shells "conda" "\
-Configure interactive shells for use with conda.el.
-
-\(fn)" nil nil)
+Configure interactive shells for use with conda.el." nil nil)
 
 (autoload 'conda-env-initialize-eshell "conda" "\
-Configure eshell for use with conda.el.
-
-\(fn)" nil nil)
+Configure eshell for use with conda.el." nil nil)
 
 (autoload 'conda-env-activate-for-buffer "conda" "\
 Activate the conda environment implied by the current buffer.
 
 This can be set by a buffer-local or project-local variable (e.g. a
 `.dir-locals.el` that defines `conda-project-env-name`), or inferred from an
-`environment.yml` or similar at the project level.
-
-\(fn)" t nil)
+`environment.yml` or similar at the project level." t nil)
 
 (defvar conda-env-autoactivate-mode nil "\
 Non-nil if Conda-Env-Autoactivate mode is enabled.
@@ -67,6 +57,11 @@ or call the function `conda-env-autoactivate-mode'.")
 
 (autoload 'conda-env-autoactivate-mode "conda" "\
 Toggle conda-env-autoactivate mode.
+
+If called interactively, enable Conda-Env-Autoactivate mode if
+ARG is positive, and disable it if ARG is zero or negative.  If
+called from Lisp, also enable the mode if ARG is omitted or nil,
+and toggle it if ARG is `toggle'; disable the mode otherwise.
 
 This mode automatically tries to activate a conda environment for the current
 buffer.
